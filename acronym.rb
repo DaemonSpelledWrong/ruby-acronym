@@ -1,5 +1,6 @@
+# Acronym exercism.io exercise in Ruby
 class Acronym
-  def self.abbreviate(str)
-    return str.split(/\W+/).map { |word| word[0] }.join.upcase
+  def self.abbreviate(full_phrase)
+    full_phrase.scan(/\b\w/).join.upcase
   end
 end
